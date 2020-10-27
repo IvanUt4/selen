@@ -1,0 +1,370 @@
+header  {
+    padding: 1em 1.5em;
+    color: white;
+}
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+h3 {
+    color: #50BC93;
+}
+
+p {
+    color: ivory;
+}
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    border:  0px;
+    font-family: Arial, Helvetica, Arial, sans-serif;
+}
+
+/*Esto ayuda */
+/* body * + * {
+    margin-top: 1.5em;
+}
+ */
+
+
+
+
+#main_text {
+    color: thistle;
+    background-color: brown;
+}
+#texto_header p{
+    color: black;
+}
+
+/* .Logo_inicial {
+    display: flex;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+}
+
+#triangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Logo_inicial a{
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+#triangle .Logo_inicial img{
+    padding: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+ */
+
+ .categorias_login_contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.categorias_login_contenedor a{
+    text-decoration: none;
+    background-color: #50BC93;
+    /* padding: 30px;
+    border-radius: 20px; */
+    color: black;
+}
+
+@media (min-width: 300px){
+.categorias_login_contenedor img {
+    height: 30vmin;
+}
+}
+
+@media (min-width: 750px){
+    .categorias_login_contenedor img {
+        height: 20vmin;
+    }
+    }
+
+
+/* .categorias_login {
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 5%;
+} */
+
+
+
+#menu_img_barra {
+    width: 2.5rem ;
+    margin-top: 0.32rem;
+}
+
+#profile_img_barra {
+    width: 2rem;
+}
+
+
+.barra_superior{
+    background-color: black;
+    display: flexbox;
+    position: sticky;
+    top: 0px;
+    height: 4rem;
+    
+  /*   margin-left: 0px !important;
+    padding-left: 0px !important;
+    border-left: 0px !important; */
+}
+
+
+
+.barra_superior ul img {
+    width: 2rem;
+    margin-left: 0.5rem;
+/*     padding: 0.5rem; */
+    width: 1.5rem;
+    padding: 0rem;
+}
+
+
+
+.barra_superior ul{
+    text-align: left;
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+}
+
+@media (min-width: 300px){
+    .barra_superior ul {
+    justify-content: space-between;
+}
+}
+
+@media (min-width: 750px){
+    .barra_superior ul {
+    justify-content: flex-end;
+    
+}
+
+#menu_img_barra{
+
+    margin-right: auto;
+}
+
+
+}
+
+
+
+
+
+#barra_superior_loginsignin_signup {
+    margin: auto;
+    background-color: #50BC93;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 2px solid #50BC93;
+
+}
+
+#barra_superior_loginsignin_signup:hover{
+    background-color: transparent;
+    border: 2px solid #50BC93;
+
+}
+
+#barra_superior_loginsignin_signup:hover a{
+    color: #50BC93;
+}
+
+#barra_superior_loginsignin_login {
+    margin: auto;
+    background-color: transparent;
+    padding: 0.3em;
+    border-radius: 0.5em;
+    border: 2px solid #50BC93;
+}
+
+#barra_superior_loginsignin_login a {
+    color: #50BC93;
+}
+
+#barra_superior_loginsignin_login:hover{
+    background-color: #50BC93;
+}
+
+#barra_superior_loginsignin_login:hover a{
+    color: black;
+}
+
+.barra_superior a{
+    color: black;
+    font-style: inherit;
+    text-decoration: none;
+}
+
+@media (min-width: 300px){
+
+#barra_superior_loginsignin{
+/*     background-color: brown;
+ */   display: flex;
+    width: 50%;    
+}
+}
+
+
+@media (min-width: 1000px){
+    #barra_superior_loginsignin{
+    /*     background-color: brown;
+     */   display: flex;
+        width: 20%;
+        justify-self: flex-start;
+        background-color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+#main_teachers {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+/*Conetenedor maestros Para Computadoras / Tablets*/
+
+
+
+/*Contenedor maestros para telefonos*/
+
+
+
+   @media (min-width: 800px){
+    .contenedor_maestros {
+       align-items: center;
+       display: flex;
+       height: 100vh;
+       width: 65vw;
+       align-items: center;
+       background-color: white;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+     }
+     
+     .contenedor_maestros > div {
+   /*     background-color: red !important;
+    */    width: 30vh;
+       height: 20vh;
+       margin: 10px;
+       text-align: center;
+   /*     line-height: 75px;
+    */    font-size: 30vh;
+     }
+   
+   .tarjeta {
+       background: url("imagenes/default_profile.png") no-repeat;
+       background-size: 30vh;
+       display: flex;
+       padding: 0.5vh;
+       width: 30vh;
+       height: 30vh;
+       margin: 0.5vh;
+   /*     border: 1px solid silver;
+    */    /* font-size: em; */
+       text-align: center;
+       align-items: flex-end;
+       border-radius: 1rem ;
+   
+   }
+   
+   
+   #texto_tarjeta {
+       background-color: white;
+       width: 31vh;
+       height: 5vh;
+       margin: -0.5vh;
+       border: 0px;
+       padding: 0.2vh;
+       font-size: 2vh;
+       border: 1px solid #aeb0b7;
+       border-top: none;
+       color: #031f72;
+       display: flex;
+       border-bottom-left-radius: 0.1vh;
+       border-bottom-right-radius: 0.1vh;
+       /* border-radius: 10px; */
+   }
+   }
+
+#texto_tarjeta h5 {
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    align-self: flex-end;
+    justify-content: start;
+}
+
+
+
+
+
+@media (min-width: 300px){
+    footer {
+        color: white;
+        text-align: center;
+        background-color: brown;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+        font-size: 5vw;
+        align-self: flex-end ;
+    }
+    }
+
+
+@media (min-width: 1000px){
+footer {
+    color: white;
+    text-align: center;
+    background-color: brown;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    font-size: 1vw;
+    align-self: flex-end ;
+}
+}
